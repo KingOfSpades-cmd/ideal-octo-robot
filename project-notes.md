@@ -16,3 +16,4 @@ Accessibility
 - Screen reader only text for card titles, username etc
 
 ## Notes
+I am 28:03 into the project
