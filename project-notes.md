@@ -17,3 +17,5 @@ Accessibility
 
 ## Notes
 I am 28:03 into the project
+
+43:18, last known issue, I have to install some gulp npm package thing, might ask AI to just help me out with that one but i prefer to follower her instructions as clearly as possible 
