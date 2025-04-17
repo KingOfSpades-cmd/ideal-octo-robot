@@ -9,7 +9,7 @@ const terser = require('gulp-terser');
 const browserSync = require('browser-sync').create();
 
 // use dart-sass for @use
-sass.compiler = require('sass'); 
+// sass.compiler = require('sass'); 
 // might need dart-sass rather than sass 
 // the main reason i used sass instead of dart-sass is because 
 // when i installed it says dart-sass has been deprecated and its now just called sass
@@ -17,7 +17,7 @@ sass.compiler = require('sass');
 // sass task
 function scssTask() {
     return src('app/scss/style.scss', { sourcemaps: true })
-        .pipe(sass())
+        .pipe(sass().on('error', sass.logError)) // Log SCSS errors
         .pipe(postcss([autoprefixer(), cssnano()]))
         .pipe(dest('dist', { sourcemaps: '.' }));
 }
